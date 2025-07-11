@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Image Analyzer</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>AI Image Analyzer</h1>
+    <form id="analyze-form">
+      <label for="prompt">Prompt:</label>
+      <textarea id="prompt" name="prompt" rows="4" required></textarea>
+      <label for="image">Image:</label>
+      <div id="image-preview-container" style="display:none;">
+        <img id="image-preview" alt="Preview" />
+      </div>
+      <input type="file" id="image" name="image" accept="image/*" />
+      <div class="action-buttons">
+        <button type="submit" id="analyze-btn">Analyze</button>
+        <button type="button" id="try-again" style="display:none;">Try Again</button>
+      </div>
+    </form>
+    <div id="analyzing-overlay" style="display:none;">
+      <div class="overlay-content">
+        <span class="spinner"></span>
+        <span class="analyzing-text">Analyzing...</span>
+      </div>
+    </div>
+    <div id="output"></div>
+    <div id="token-usage-container" style="display:none;"></div>
+  </div>
+  <script src="/static/main.js"></script>
+</body>
+</html>

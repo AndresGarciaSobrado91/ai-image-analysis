@@ -1,0 +1,11 @@
+fastapi
+python-dotenv
+langchain
+langchain-openai
+langchain-community
+pydantic
+pydantic-settings
+uvicorn
+python-multipart
+Pillow
+typing-extensions
