@@ -26,20 +26,21 @@ cd ai-ads-filtering
 2. Create a virtual environment:
 
 ```bash
-python -m venv venv
+uv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
 3. Install dependencies:
 
 ```bash
+uv pip install pip
 pip install -r requirements.txt
 ```
 
 4. Create a `.env` file in the root directory:
 
 ```bash
-cp .env.example .env
+touch .env
 ```
 
 5. Update the `.env` file with your Azure OpenAI credentials:
